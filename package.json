@@ -1,0 +1,26 @@
+{
+  "name": "google-sheets-rw",
+  "description": "Reads and writes to a google sheet",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "src/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "ts-loader": "^4.4.2",
+    "tslint": "^5.11.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "extends": "tslint-config-standard",
+    "rules": {
+        "space-before-function-paren": false,
+        "ter-indent": false,
+        "no-empty": false,
+        "no-angle-bracket-type-assertion": false,
+        "whitespace": false,
+        "eofline": false,
+        "no-unused-expression": false
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

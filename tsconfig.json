@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        // this aligns with Vue's browser support
+        "target": "es5",
+        // this enables stricter inference for data properties on `this`
+        "strict": true,
+        // if using webpack 2+ or rollup, to leverage tree shaking:
+        "module": "es2015",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "lib": [
+            "es5",
+            "es2015",
+            "dom",
+            "es6",
+            "webworker",
+            "scripthost",
+            "es2015.promise"
+        ]
+    },
+    "include": [
+        "./src/*",
+        "./src/**/*",
+        "./src/**/**/*"
+    ],
+    "exclude": [
+        "./node_modules/*",
+        "./dist/*"
+    ],
+    "compileOnSave": false
+}

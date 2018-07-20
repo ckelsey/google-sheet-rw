@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Google Sheets RW</h1>
+    <script src="./google-sheets-rw.min.js"></script>
+    <script>
+        GoogleSheetsRW.init({
+            sheet: "11YurxTzoLnoLOafPpKBATjHnNkAdU_JuVrBDcd9fyVA",
+            script: "MvI20n7VikW9Mc0u_8wBs4kJrWdESENso",
+            domain: "ckcreates"
+        })
+            .then((worksheet) => {
+                GoogleSheetsRW.readSheet(worksheet, worksheet.sheets[Object.keys(worksheet.sheets)[0]])
+                    .then(data => {
+                        console.log(data, GoogleSheetsRW.worksheets)
+                        GoogleSheetsRW.createEntries([{
+                            email: "test@test.com",
+                            message: "tests"
+                        }], worksheet, worksheet.sheets[Object.keys(worksheet.sheets)[0]])
+                            .then(res => {
+                            })
+                            .catch(error => {
+                                console.log(`write error`, error)
+                            })
+                    })
+                    .catch(error => {
+                        console.log(`read error`, error)
+                    })
+            })
+            .catch(error => {
+                console.log(`error`, error)
+            })
+    </script>
+</body>
+
+</html>
